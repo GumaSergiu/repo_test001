@@ -1,3 +1,5 @@
 *.zip
 *.cf
 *.dt
+*.exe
+*.pdf
