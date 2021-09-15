@@ -1,6 +1,9 @@
 ﻿
 Procedure PressExecuteButton(Button)
-Если RaportAmanunt	Тогда
+	
+//	 // <<>>Guma   13.09.2021
+
+Если RaportAmanunt        Тогда
 Выборка=Документы.RaportDeVanzariCuAmanunt.Выбрать(BegOfDay(DataInc),EndOfDay(DataSf));
 Пока Выборка.Следующий() Цикл
 
@@ -21,7 +24,7 @@ Procedure PressExecuteButton(Button)
 	
 КонецЦикла;
 Для Каждого ТекущаяСтрока Из Выборка.Servicii Цикл
-	а=0;
+	а=  0;
 	Для Каждого Движение Из Набор Цикл
 		Если Движение.Nomenclator = ТекущаяСтрока.Nomenclator Тогда
 		 а=а+1;
